@@ -58,7 +58,7 @@
 
 L = ['Bart', 'Lisa', 'Adam']
 for name in L:
-	print('hello %s'%name)
+	print('hello %s'%name) # %s 表示格式化字符串
 
 n = 1
 while n < 100:
