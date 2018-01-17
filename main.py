@@ -35,21 +35,45 @@
 # else:
 # 	print('00前')
 
-height = input('请输入你的身高(m)：')
-weight = input('请输入你的体重(kg)：')
-BMI = weight / (height * height)
-print('您的 BMI 指数为：%.2f'%BMI)
-if BMI < 18.5:
-	print('过轻')
-elif BMI < 25:
-	print('正常')
-elif BMI < 28:
-	print('过重')
-elif BMI < 32:
-	print('肥胖')
-else :
-	print('严重肥胖')	
+# height = float(input('请输入你的身高(m)：'))
+# weight = float(input('请输入你的体重(kg)：'))
+# BMI = weight / (height * height)
+# print('您的 BMI 指数为：%.2f'%BMI)
+# if BMI < 18.5:
+# 	print('过轻')
+# elif BMI < 25:
+# 	print('正常')
+# elif BMI < 28:
+# 	print('过重')
+# elif BMI < 32:
+# 	print('肥胖')
+# else :
+# 	print('严重肥胖')	
 	
+# 循环
+# sum = 0
+# for x in list(range(101)):
+# 	sum = sum + x
+# print(sum)
+
+L = ['Bart', 'Lisa', 'Adam']
+for name in L:
+	print('hello %s'%name)
+
+n = 1
+while n < 100:
+	if n > 10:
+		break
+	print(n)
+	n = n + 1
+print('end')	
+
+number = 0
+while number < 10:
+	number = number + 1
+	if number % 2 == 0:
+		continue
+	print(number)
 
 
 
