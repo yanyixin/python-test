@@ -56,25 +56,28 @@
 # 	sum = sum + x
 # print(sum)
 
-L = ['Bart', 'Lisa', 'Adam']
-for name in L:
-	print('hello %s'%name) # %s 表示格式化字符串
+# L = ['Bart', 'Lisa', 'Adam']
+# for name in L:
+# 	print('hello %s'%name) # %s 表示格式化字符串
 
-n = 1
-while n < 100:
-	if n > 10:
-		break
-	print(n)
-	n = n + 1
-print('end')	
+# n = 1
+# while n < 100:
+# 	if n > 10:
+# 		break
+# 	print(n)
+# 	n = n + 1
+# print('end')	
 
-number = 0
-while number < 10:
-	number = number + 1
-	if number % 2 == 0:
-		continue
-	print(number)
+# number = 0
+# while number < 10:
+# 	number = number + 1
+# 	if number % 2 == 0:
+# 		continue
+# 	print(number)
 
-
+list=['coy','mandy','jack']
+s=set(list)
+list.append('Vokkor')
+print(s)
 
 
