@@ -75,9 +75,11 @@
 # 		continue
 # 	print(number)
 
-list=['coy','mandy','jack']
-s=set(list)
-list.append('Vokkor')
-print(s)
+# list=['coy','mandy','jack']
+# s=set(list)
+# list.append('Vokkor')
+# print(s)
 
+# 函数
+print(abs(-20)) # 求绝对值
 
