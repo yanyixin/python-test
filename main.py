@@ -81,8 +81,79 @@
 # print(s)
 
 # 函数
-print(abs(-20)) # 求绝对值
+# print(abs(-20)) # 求绝对值
 
-a1 = 255
-print(hex(a1)) # hex() 函数表示转化成 16 进制
+# a1 = 255
+# print(hex(a1)) # hex() 函数表示转化成 16 进制
+
+# 定义函数
+# def my_abs(x):
+# 	if x >= 0:
+# 		return x
+# 	else:
+# 		return -x
+
+# print(my_abs(-100))
+
+# import math
+# def quadratic(a, b, c):
+# 	pass
+
+# print('quadratic', quadratic())
+
+# def add_end(l = None):
+# 	if l is None:
+# 		l = []
+# 	l.append('end')
+# 	return l
+# print(add_end([1,2]))
+
+# 可变参数
+# nums = [1,2,3]
+# def calc(*numbers):
+# 	sum = 0
+# 	for n in numbers:
+# 		sum = sum + n * n
+# 	return sum
+# print(calc())
+
+# # 关键字参数
+# other = {'love': 'music', 'city': 'shanghai'}
+# def person(name, age, *, love, city):
+# 	print('name:', name, 'age:', age, 'love:', love)
+# person('ym', 18, **other)
+
+def product(*nums):
+	if len(nums)  == 0:
+		raise TypeError
+	else:
+		sum = 1
+		for n in nums:
+			sum = sum * n
+		return int(sum)
+# print(product(2,2,3))
+
+# 测试
+print('product(5) =', product(5))
+print('product(5, 6) =', product(5, 6))
+print('product(5, 6, 7) =', product(5, 6, 7))
+print('product(5, 6, 7, 9) =', product(5, 6, 7, 9))
+if product(5) != 5:
+    print('5测试失败!')
+elif product(5, 6) != 30:
+    print('5,6测试失败!')
+elif product(5, 6, 7) != 210:
+    print('5,6,7测试失败!')
+elif product(5, 6, 7, 9) != 1890:
+    print('5,6,7,9测试失败!')
+else:
+    try:
+        product()
+        print('测试失败!')
+    except TypeError:
+        print('测试成功!')
+
+
+
+
 
